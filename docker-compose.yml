@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    image: amal26/express-sqlite-app  # Replace <username> with your Docker Hub username
+    container_name: express-sqlite-app
+    volumes:
+      - ./mydatabase.db:/usr/src/app/mydatabase.db
+    ports:
+      - "3000:3000"
